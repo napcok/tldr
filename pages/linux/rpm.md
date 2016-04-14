@@ -1,27 +1,27 @@
 # rpm
 
-> RPM Package Manager.
+> Menedżer pakietów RPM.
 
-- Show version of httpd package:
+- Pokaż wersję pakietu httpd:
 
 `rpm -q {{httpd}}`
 
-- List versions of all matching packages:
+- Pokaż wersje wszystkich pasujących pakietów:
 
 `rpm -qa '{{mariadb*}}'`
 
-- Identify owner of a file and show version of the package:
+- Znajdź pakiet do którego należy plik i pokaż jego wersję:
 
 `rpm -qf {{/etc/postfix/main.cf}}`
 
-- List package-owned files:
+- Pokaż pliki należące do pakietu:
 
 `rpm -ql {{kernel}}`
 
-- Show scriptlets from an RPM file:
+- Pokaż skrypty z pliku RPM:
 
 `rpm -qp --scripts {{some.rpm}}`
 
-- Show changed, missing and/or incorrectly installed files of matching packages:
+- Pokaż zmienione, zagubione lub źle zainstalowane pliki z pasujących pakietów:
 
 `rpm -Va '{{php-*}}'`
